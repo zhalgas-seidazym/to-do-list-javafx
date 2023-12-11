@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.algothproject.MainPageController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="1040.0" style="-fx-background-color: #8f8f8f;">
+         <children>
+            <TextField fx:id="searchField" layoutX="385.0" layoutY="20.0" prefHeight="25.0" prefWidth="207.0" promptText="Search By Time" style="-fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15;" />
+            <Button fx:id="searchButton" layoutX="601.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 1;" text="Search" />
+            <Button fx:id="addButton" layoutX="25.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 1;" text="Add new " />
+            <Button fx:id="refreshButton" layoutX="102.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 1;" text="Refresh" />
+         </children>
+      </Pane>
+      <Pane layoutY="67.0" prefHeight="608.0" prefWidth="355.0" style="-fx-border-color: grey;">
+         <children>
+            <ListView fx:id="listView" prefHeight="558.0" prefWidth="355.0" />
+            <Button fx:id="orderButton" layoutX="166.0" layoutY="567.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 1;" text="Order By Date" />
+            <CheckBox fx:id="reverseCheck" layoutX="95.0" layoutY="572.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Reverse" />
+         </children>
+      </Pane>
+      <Text fx:id="dateText" layoutX="355.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="686.4">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="descriptionField" layoutX="355.0" layoutY="67.0" prefHeight="558.0" prefWidth="686.0" wrapText="true" />
+      <Button fx:id="deleteButton" layoutX="933.0" layoutY="633.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 1;" text="Remove This..." />
+   </children>
+</AnchorPane>
